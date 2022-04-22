@@ -1,0 +1,5 @@
+/* Interfaz funcional */
+
+public interface Calculadora{
+    public int calcular(int x, int y);
+}
