@@ -23,6 +23,5 @@ accion(01,waitEste,goNorte).
 accion(10,waitEste,goNorte).
 accion(11,waitEste,goNorte).
 
-%% Afirmación del regña llamada eventos
-eventos(estadoI,[eI|eF]):-
-    accion(eI,estadoI,Z),write(Z),nl,eventos(Z,eF).
+%% Afirmación del regla llamada eventos
+eventos(Ei,[I|F]):-accion(I,Ei,Z),write(Z),nl,eventos(Z,F).
